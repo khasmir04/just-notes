@@ -6,13 +6,47 @@ $black: black;
 $whiteSmoke: whiteSmoke;
 $gray: gray;
 
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  padding: 12px;
+  height: 61px;
+}
+
+.main {
+  height: calc(100vh - 61px);
+}
+
+.mainContainer {
+  display: flex;
+}
+
 .container {
   display: flex;
-  margin: 10px;
+  margin: 2px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100vw;
 }
 
 .left {
   width: 20rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.right {
+  width: 100%;
+}
+
+.rightContent {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 0 12px;
+  border-radius: 0.5rem;
 }
 
 .button {

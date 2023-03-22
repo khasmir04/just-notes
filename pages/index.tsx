@@ -12,7 +12,7 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <Head>
         <title>Just Notes!</title>
         <meta name="description" content="This is a note app" />
@@ -20,12 +20,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.header}>Just Notes! - Create your notes for free</div>
         <div className={styles.container}>
           <div className={styles.left}>
             <NoteOperations getSingleNote={getSingleNote} />
           </div>
           <div className={styles.right}>
-            <NoteDetails ID={ID} />
+            <div className={styles.rightContent}>
+              <NoteDetails ID={ID} />
+            </div>
           </div>
         </div>
       </main>
