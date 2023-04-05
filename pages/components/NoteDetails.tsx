@@ -71,7 +71,7 @@ const NoteDetails = (props: { ID: string }) => {
 
   return (
     <div>
-      {singleNote &&
+      {singleNote ?
         <>
           <div>
             <button className={styles.editBtn} onClick={getEditData}>Edit</button>
@@ -104,6 +104,10 @@ const NoteDetails = (props: { ID: string }) => {
             <></>
           )}
         </>
+      :
+        <>
+          <h2>No Note Selected</h2>
+        </>  
       }
     </div>
   )
