@@ -106,7 +106,7 @@ const NoteDetails = (props: { ID: string }) => {
         </>
       :
         <>
-          <h2>No Note Selected</h2>
+          <h2>Select a note</h2>
         </>  
       }
     </div>
